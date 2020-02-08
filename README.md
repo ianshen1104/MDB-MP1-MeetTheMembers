@@ -3,4 +3,4 @@ This is a simple trivia game style app that helps its users memorize the names o
 
 ![Alt text](/startVC.jpg?raw=true "Start Screen")
 ![Alt text](/mainVC.jpg?raw=true "Main Screen")
-![Alt text](/statasVC.jpg?raw=true "Stats Screen")
+![Alt text](/statsVC.jpg?raw=true "Stats Screen")
