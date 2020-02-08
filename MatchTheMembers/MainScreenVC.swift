@@ -53,6 +53,11 @@ class MainScreenVC: UIViewController {
         startQuestion()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        runTimer()
+    }
+    
     func startQuestion() {
         inPlay = true
         statsPressed = false
@@ -266,6 +271,7 @@ class MainScreenVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        segue.destination.modalPresentationStyle = .fullScreen
         if let destinationVC = segue.destination as? StatisticsScreenVC {
             destinationVC.streak = maxStreak
             destinationVC.nameHis = nameHistory
